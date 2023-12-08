@@ -6,6 +6,7 @@ const searchBtn = document.querySelector(".search button");
 const weathericon = document.querySelector(".weatherIcon");
 
 
+
 async function checkWeather(city){
     const response = await fetch (apiurl+ city + `&appid=${apikey}`);
     var data = await response.json();
